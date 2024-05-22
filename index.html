@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de Calificaciones</title>
+</head>
+
+<body>
+    <div id="contenedora">
+        
+        <div class="titulo">
+            <marquee> 
+                - Cristian Druetta - Reto 2 - Pract. Prof. JavaScript - 2do Año 
+                - Desarrollo de Software - ITEC Rio Cuarto - 2024 -
+            </marquee>
+
+            <h1>Registro de Calificaciones</h1> 
+        </div>
+        
+        <div id="formulario1">
+            <label for="nomAlumn">Nombre y Apellido :</label>
+            <input type="text" id="nombre" maxlength="300">
+            
+            
+            <label for="calificacion">Calificación:</label>
+            <input type="number" id="calificacion" min="0" max="999" maxlength="3">
+            
+            <button onclick="registrarCalificacion()">Registrar</button>
+        </div>
+
+        <div id="resultados">
+            <button onclick="calcularPromedio()">Calcular Promedio</button>
+            <button onclick="mostrarMayor()">Mayor Calificación</button>
+            <button onclick="mostrarMenor()">Menor Calificación</button>
+            <button onclick="filtrarAprobados()">Mostrar Aprobados</button>
+            <button onclick="filtrarReprobados()">Mostrar Reprobados</button>
+        </div>
+
+        <button class="borrar-registros" onclick="borrarRegistros()">Borrar Registros</button>
+
+        <div id="lista-calificaciones">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Calificación</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-calificaciones">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+
+    <footer>
+        <p>Copyright © 2024 - All rights reserved - Cristian Druetta</p>
+    </footer>
+</body>
+</html>

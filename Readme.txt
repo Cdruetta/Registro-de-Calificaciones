@@ -1,0 +1,1 @@
+reto_2, agregue lo de local storage
